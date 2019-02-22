@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlv"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imdet"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvdet"
+            android:text="magadir"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
