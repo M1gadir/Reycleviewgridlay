@@ -13,6 +13,7 @@ class Dapter extends RecyclerView.Adapter<Adupter> {
     Context context;
     String[] haha = {"mobil","motor","perahu","tank","kerata","pesawat"};
     int[] gam = {R.drawable.car,R.drawable.motorcycle,R.drawable.cargoship,R.drawable.tank,R.drawable.cargo,R.drawable.airplane};
+    String[] hahah = {"mobil adalah sebuah kendaraan yang beroda empat","motor adalah kendaraan yang beroda dua","perahu adlah asebuah kendaraan yang berjalan di air","tank adalah sebuah kendaraan militer yang menggunakan ban gerigi","kerata adalah sebuah kendaraan yang di kategorikan tranportasi umum yang mempunyai ban besi","pesawat adalah sebuah kendaraan yang ada di udara"};
     public Dapter(Context context) {
         this.context= context;
 
@@ -34,7 +35,7 @@ class Dapter extends RecyclerView.Adapter<Adupter> {
         @Override
         public void onClick(View v) {
             Intent t = new Intent(context, Detail.class);
-            t.putExtra("a",haha[i]);
+            t.putExtra("a",hahah[i]);
             t.putExtra("",gam[i]);
             context.startActivity(t);
         }
